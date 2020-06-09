@@ -18,6 +18,7 @@ button {
 	background-color: #29c5e6;
 	border: none;
 	height: 32px;
+	width: 32px;
 	font-family: 'Oswald', sans-serif;
 }
 p {
@@ -29,4 +30,50 @@ p {
 }
 header {
 	padding: 20px 0;
+}
+form[name="search"] {
+	float: right;
+}
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style-position: inside;
+	font: 14px 'Oswald', sans-serif;
+	padding: 10px;
+}
+
+.top-menu li {
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 0;
+}
+
+.top-menu li.active {
+	background: #29c5e6;
+	color: #fff;
+}
+
+.top-menu a {
+	color: #b2b2b2;
+}
+#heading {
+	background: transparent url(../img/h0-bg.png);
+	margin: 30px 0;
+	padding-left: 20px;
+}
+
+h1 {
+	display: inline-block;
+	color: #7e7e7e;
+	font: 43px/43px 'Oswald', sans-serif;
+	background: url(../img/bg.png);
+	margin: 0;
+	padding: 0 10px;
 }
