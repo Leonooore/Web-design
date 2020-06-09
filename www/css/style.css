@@ -23,3 +23,10 @@ button {
 p {
 	margin: 20px 0;
 }
+#wrapper {
+	max-width: 960px;
+	margin: auto;
+}
+header {
+	padding: 20px 0;
+}
