@@ -116,3 +116,26 @@ aside > p {
 	padding: 10px;
 	margin: 0;
 }
+blockquote {
+	margin: 0;
+	background: #29c5e6;
+	padding: 10px 20px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+blockquote p {
+	color: #fff;
+	font-style: italic;
+	font-size: 33px;
+	margin: 0;
+}
+
+blockquote cite {
+	display: block;
+	font-size: 20px;
+	font-style: normal;
+	color: #1d8ea6;
+	margin: 0;
+	text-align: right;
+}
