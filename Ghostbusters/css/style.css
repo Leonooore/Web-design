@@ -6,13 +6,21 @@ body {
     font-weight: 300;
     color: #363636;
 }
+.no-scroll {
+    overflow: hidden;
+}
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 104px;
     padding-left: 34px;
     border-bottom: 1px solid #D4D4D4; 
+}
+.m-menu {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
 }
 .header-logo {
     display: flex;
@@ -137,6 +145,9 @@ body {
     width: 358px;
 }
 .trailer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     border: 1px solid #D4D4D4;
     border-radius: 0px 0px 5px 5px;
@@ -144,6 +155,7 @@ body {
     padding-bottom: 25px;
     outline: none;
     cursor: pointer;
+    text-decoration: none;
 }
 .trailer-button-icon, .trailer-button-text {
     vertical-align: middle; 
@@ -245,15 +257,25 @@ body {
     line-height: 28px;
     color: #A5A5A5;
 }
-.section-title-active {
+.section-title.active {
     font-weight: 900;
     color: #363636;
+}
+.section-title:first-child {
     margin-right: 30px;
 }
+.tab {
+    cursor: pointer;
+}
 .tabs-content {
-    display: flex;
+    display: none;
     align-items: center;
     flex-wrap: wrap;
+    visibility: hidden;
+}
+.tabs-content.visible {
+    display: flex;
+    visibility: visible;
 }
 .card {
     display: flex;
@@ -294,16 +316,12 @@ body {
     margin-top: 0;
     margin-bottom: 65px;
 }
-.news-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 .news-card {
     background-color: #fff;
     border-radius: 5px;
     flex-basis: 23%;
     padding: 30px;
+    min-height: 170px;
 }
 .news-date {
     font-size: 14px;
@@ -317,6 +335,17 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+}
+.button-next {
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    cursor: pointer;
 }
 @media (max-width: 1200px) {
     .container {
@@ -346,6 +375,9 @@ body {
     .navigation-link {
         margin-right: 10px;
         font-size: 16px;
+    }
+    .news-card {
+        min-height: 186px;
     }
 }
 @media (max-width: 991px) {
@@ -382,6 +414,7 @@ body {
     .news-card {
         flex-basis: 48%;
         margin-bottom: 20px;
+        min-height: 170px;
     }
 }
 @media (max-width: 768px) {
@@ -392,6 +425,56 @@ body {
         height: 80px;
         padding-left: 2.5%;
         padding-right: 2.5%;
+    }
+    .m-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        right: 0;
+        bottom: 0;
+        height: calc(100% - 80px);
+        background: #5671F6;
+    }
+    .m-menu.active {
+        display: flex;
+    }
+    .search-input {
+        width: 260px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        background-image: none;
+        font-size: 18px;
+        margin: 0;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .navigation-link {
+        color:#fff;
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
+    .navigation-link:last-child {
+        margin-bottom: 0;
+    }
+    .button-group {
+        height: auto;
+        flex-direction: column;
+    }
+    .sign-up {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        margin-bottom: 30px;
     }
     .film {
         padding-top: 50px;
@@ -412,16 +495,17 @@ body {
         padding-top: 50px;
         padding-bottom: 70px;
     }
-    .mobile-buttons {
+    .news-card {
+       max-width: 90%;
+    }
+    .button-next {
         display: block;
     }
-    .search-input {
-        display: none;
+    .mobile-buttons {
+        display: block;
+        margin-left: auto;
     }
     .header-logo:after {
-        display: none;
-    }
-    .button-group{
         display: none;
     }
 }
