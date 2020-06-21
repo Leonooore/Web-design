@@ -1,0 +1,122 @@
+body {
+    font-family: 'Anton', sans-serif;
+    font-style: 16px;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    color: #fff;
+    padding-top: 57px;
+    padding-bottom: 322px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 48px;
+    width: 31px;
+    margin-right: 69px;
+}
+.menu {
+    display: flex;
+}
+.menu-link {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin-right: 40px;
+}
+.tel {
+    font-size: 17px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: auto;
+}
+.offer{
+    margin-top: 321px;
+}
+.header-text {
+    font-size: 30px;
+    line-height: 44px;
+}
+.header-title {
+    font-size: 100px;
+    line-height: 147px;
+}
+.header-button {
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-top: 19px;
+    padding: 17px 47px;
+    cursor: pointer;
+}
+.about {
+    padding-top: 113px;
+    padding-bottom: 114px;
+}
+.about-title {
+    font-size: 50px;
+    line-height: 73px;
+    margin-bottom: 58px;
+}
+.about-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 84px;
+}
+.about-post {
+    display: block;
+    width: 564px;
+}
+.about-info-title {
+    font-size: 25px;
+    line-height: 37px;
+}
+.about-info-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+}
+.about-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer {
+    display: flex;
+    padding-bottom: 80px;
+}
+.footer-text {
+    display: inline-block;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 55px;
+}

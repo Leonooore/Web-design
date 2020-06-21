@@ -346,6 +346,7 @@ body {
     transform: translateY(-50%);
     z-index: 99;
     cursor: pointer;
+    outline: none;
 }
 @media (max-width: 1200px) {
     .container {
@@ -497,6 +498,7 @@ body {
     }
     .news-card {
        max-width: 90%;
+       margin-bottom: 0;
     }
     .button-next {
         display: block;
