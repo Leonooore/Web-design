@@ -1,2 +1,2 @@
 # Web-layouts
-Soma websites layouts
+Some websites layouts
